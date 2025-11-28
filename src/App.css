@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.products-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+  line-height: 1.4;
+}
+
+
+.rating-stars {
+  margin: 10px 0;
+}
+
+.star {
+  font-size: 20px;
+  margin-right: 2px;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+
+.product-detail-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-category {
+  font-style: italic;
+  color: #666;
+}
+
+.product-description {
+  line-height: 1.6;
+  color: #555;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rating-text {
+  color: #666;
+  font-size: 14px;
+}
+
+.product-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c5aa0;
+}
+
+
+.not-found-page {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.not-found-page h1 {
+  color: #dc3545;
+  margin-bottom: 20px;
+}
+
+.not-found-page p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.back-to-products {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.back-to-products:hover {
+  background-color: #0056b3;
+}
+
+/* Состояния загрузки и ошибки */
+.loading, .error {
+  text-align: center;
+  padding: 50px 20px;
+  font-size: 18px;
+}
+
+.error {
+  color: #dc3545;
+}
+
